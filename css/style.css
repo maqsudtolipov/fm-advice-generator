@@ -10,24 +10,24 @@ html {
 
 body {
   font-family: 'Manrope', sans-serif;
-  line-height: 1;
   font-weight: 800;
-  background-color: #202632;
-  background-position: center;
+  background: #202632;
 
   display: grid;
   place-items: center;
   min-height: 100vh;
+  padding: 0 3.2rem;
 }
+
 .card {
   position: relative;
   text-align: center;
-  width: 54rem;
   background-color: #313a49;
-  border-radius: 15px;
+  max-width: 54rem;
   padding: 4.8rem 3.8rem 7.8rem 3.8rem;
+
+  border-radius: 15px;
   box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.25);
-  /* opacity: 0.8; */
 }
 
 .id {
@@ -51,8 +51,8 @@ body {
   left: 50%;
   bottom: -3.4rem;
   transform: translateX(-50%);
-  padding: 2.2rem;
   background-color: #53ffab;
+  padding: 2.2rem;
   border-radius: 50rem;
   cursor: pointer;
   transition: all 0.1s;
@@ -60,8 +60,19 @@ body {
 
 .dice:hover {
   background-color: #4be69a;
+  box-shadow: 0 0 3.2rem #4be69a;
 }
 
 .dice:active {
   bottom: -3.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .id {
+    font-size: 1.2rem;
+  }
+
+  .advice {
+    font-size: 2.4rem;
+  }
 }
