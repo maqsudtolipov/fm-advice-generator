@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  line-height: 1;
+  font-weight: 800;
+  background-color: #202632;
+  background-position: center;
+
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+.card {
+  position: relative;
+  text-align: center;
+  width: 54rem;
+  background-color: #313a49;
+  border-radius: 15px;
+  padding: 4.8rem 3.8rem 7.8rem 3.8rem;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.25);
+  /* opacity: 0.8; */
+}
+
+.id {
+  display: inline-block;
+  font-size: 1.4rem;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  color: #53ffab;
+  margin-bottom: 2.4rem;
+}
+
+.advice {
+  font-size: 2.8rem;
+  line-height: 1.4;
+  color: hsl(193, 38%, 86%);
+  margin-bottom: 3.6rem;
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  bottom: -3.4rem;
+  transform: translateX(-50%);
+  padding: 2.2rem;
+  background-color: #53ffab;
+  border-radius: 50rem;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.dice:hover {
+  background-color: #4be69a;
+}
+
+.dice:active {
+  bottom: -3.8rem;
+}
