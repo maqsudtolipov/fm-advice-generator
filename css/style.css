@@ -46,6 +46,10 @@ body {
   margin-bottom: 3.6rem;
 }
 
+.divider {
+  width: 100%;
+}
+
 .dice {
   position: absolute;
   left: 50%;
